@@ -195,7 +195,7 @@ input {
     .aboutMe {
         padding-left: 0;
     }
-    .navbar {
+    #navbar {
         width: 100%;
     }
     .aboutMeHeader {
@@ -237,82 +237,51 @@ input {
         height: 420px;
         margin-bottom: 2em;
     }
+    .navList {
+        background: white;
+        margin: auto;
+        width: 100%;
+    }
 }
 
-
-
-/* @media only screen and (max-width: 768px) and (min-width: 641px) {
-    .navbar {
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+    .header, .container, .navbar {
+        width: 768px;
+    }
+    .header {
+        height: 6em;
+    }
+    #navbar {
+        width: 768px;
+        float: left;
+    }
+    .navList {
         background: white;
+        margin: auto;
+        
+    }
+    .logo {
+        width: 768px;
+        margin: auto;
+        text-align: center;
+    }
+    .logoName {
+        margin: auto;
+    }
+    .contentMain {
+        margin-top: 6em;
+        width: 100%;
+    }
+    .aboutMe {
         width: 100%;
     }
     .aboutMeContent {
-        margin-right: 1em;
-        color: red;
         width: 100%;
-        margin-left: 0em;
-        padding: 1em;
     }
 }
 
-.container, .logo, .logoName, .aboutMe, .aboutMeHeader {
-    width: 768px;
-    align-content: center;
-}
-
-.aboutMe {
-    padding-left: 0;
-}
-
-.navbar {
-    width: 100%;
-}
-
-.aboutMeHeader {
-    border-bottom: .1em solid lightgrey;
-}
-
-.logoName {
-    text-align: center;
-}
-
-.container, .aboutMe, .aboutMeHeader {
-    width: 768px;
-    align-content: center;
-}
-
-.logo {
-    width: 100%;
-}
-
-.portfolioItem {
-    width: 40%;
-    margin: 2em;
-    float: left;
-    background-image: url(/img/myPhoto.jpg);
-    background-size: cover;
-    height: 420px;
-    margin-bottom: 2em;
-}
-
-.contentMain {
-    width: 100%;
-    margin-left: 0px;
-    padding-left: 0px;
-    margin-top: 0em;
-}
-
-p {
-    width: 710px;
-    padding-right: 3%
-}
-
-header {
-    height: 3em;
-} */
-
 @media only screen and (max-width: 980x) {
     header {
-        height: 6em;
+        height: 3em;
     }
 }
