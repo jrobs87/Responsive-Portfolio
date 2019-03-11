@@ -203,6 +203,7 @@ input {
     }
     .logoName {
         text-align: center;
+        margin: auto;
     }
     .contentMain {
         width: 100%;
@@ -238,8 +239,13 @@ input {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    
+
+
+/* @media only screen and (max-width: 768px) and (min-width: 641px) {
+    .navbar {
+        background: white;
+        width: 100%;
+    }
     .aboutMeContent {
         margin-right: 1em;
         color: red;
@@ -247,14 +253,36 @@ input {
         margin-left: 0em;
         padding: 1em;
     }
-    
 }
+
+.container, .logo, .logoName, .aboutMe, .aboutMeHeader {
+    width: 768px;
+    align-content: center;
+}
+
+.aboutMe {
+    padding-left: 0;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.aboutMeHeader {
+    border-bottom: .1em solid lightgrey;
+}
+
+.logoName {
+    text-align: center;
+}
+
 .container, .aboutMe, .aboutMeHeader {
     width: 768px;
     align-content: center;
 }
+
 .logo {
-    width: 200px;
+    width: 100%;
 }
 
 .portfolioItem {
@@ -278,6 +306,10 @@ p {
     width: 710px;
     padding-right: 3%
 }
+
+header {
+    height: 3em;
+} */
 
 @media only screen and (max-width: 980x) {
     header {
