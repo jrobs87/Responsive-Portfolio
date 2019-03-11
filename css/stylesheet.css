@@ -1,0 +1,286 @@
+body {
+    background-image: url(/img/hexBackground.jpg);
+    background-repeat: repeat;
+    margin: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5b5b5b;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #4fa09b;
+}
+
+p {
+    line-height: 1.5em;
+    padding-left: 0%;
+    font-size: 1em;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    border-bottom: .1em solid lightgrey;
+    height: 48px;
+}
+
+.container {
+    margin: auto;
+    width: 960px;
+}
+
+.logo {
+    float: left;
+    background: #4fa09b;
+    height: 1.5em;
+    padding: .75em .75em .75em .75em;
+    width: 20%;
+}
+
+.logoName {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+#navbar {
+    float: right;
+}
+
+.navList {
+    padding: 1em 2em .9em 1em;
+    margin-top: 0;
+}
+
+.navListItem {
+    display: inline;
+    padding: 0em 1em 0em 2em;
+    margin: 0;
+    list-style: none;
+}
+
+#navListItemCenter {
+    border-left: .1em solid #e5e5e5;
+    border-right: .1em solid #e5e5e5;
+}
+
+.main-container {
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /* height of your footer */
+    padding-bottom: 3em;
+}
+
+.contentMain {
+    background: white;
+    margin-top: 2.5em;
+    margin-bottom: 10%;
+    border: .05em solid lightgrey;
+    width: 600px;
+    padding: 18px;
+}
+
+.aboutMe {
+    padding: 1em;
+    background: white;
+}
+
+.aboutMeHeader {
+    background: white;
+    padding: 1em;
+    border-bottom: .1em solid lightgrey;
+}
+
+.aboutMeContent {
+    width: 100%;
+}
+
+#aboutMeIMG {
+    float: left;
+    width: 200px;
+    margin: 0em 1em 1em 0em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 0;
+    margin-top: 1em;
+    background-color: #5b5b5b;
+    border-top: .5em solid #4fa09b;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#aboutMeText {
+    float: right;
+}
+
+form {
+    margin-top: 2em;
+    padding: 0em 3em 0em 1em;
+}
+
+input {
+    padding: 1em;
+    font-size: 1em;
+    margin: 1em 0em 1em 0em;
+    width: 98%;
+}
+
+.submit {
+    width: 130px;
+    border: none;
+    background: #4fa09b;
+    color: white;
+}
+
+.portfolioItem {
+    width: 200px;
+    height: 160px;
+    margin: auto;
+    float: left;
+    background-image: url(/img/myPhoto.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    margin: 2em;
+    position: relative;
+}
+
+.portfolioItemName {
+    background: #4fa09b;
+    padding: .5em 0em .5em 0em;
+    margin-bottom: .5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+/* Begin Media Queries */
+
+@media only screen and (max-width: 640px) {
+    header {
+        height: 6em;
+    }
+    .aboutMeContent {
+        margin-right: 1em;
+        color: red;
+        width: 100%;
+        margin-left: 0em;
+        padding: 1em;
+    }
+    .container, .logo, .logoName, .aboutMe, .aboutMeHeader {
+        width: 640px;
+        align-content: center;
+    }
+    .aboutMe {
+        padding-left: 0;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .aboutMeHeader {
+        border-bottom: .1em solid lightgrey;
+    }
+    .logoName {
+        text-align: center;
+    }
+    .contentMain {
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-top: 0em;
+    }
+    #aboutMeIMG {
+        width: 94%;
+        margin: auto;
+        padding: 3%;
+    }
+    .navbar {
+        background: white;
+        width: 100%;
+    }
+    p {
+        width: 620px;
+        padding: 3%
+    }
+    header {
+        position: static;
+        margin-bottom: 1em;
+    }
+    .portfolioItem {
+        width: 90%;
+        margin: 2em;
+        float: left;
+        background-image: url(/img/myPhoto.jpg);
+        background-size: cover;
+        height: 420px;
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .aboutMeContent {
+        margin-right: 1em;
+        color: red;
+        width: 100%;
+        margin-left: 0em;
+        padding: 1em;
+    }
+    
+}
+.container, .aboutMe, .aboutMeHeader {
+    width: 768px;
+    align-content: center;
+}
+.logo {
+    width: 200px;
+}
+
+.portfolioItem {
+    width: 40%;
+    margin: 2em;
+    float: left;
+    background-image: url(/img/myPhoto.jpg);
+    background-size: cover;
+    height: 420px;
+    margin-bottom: 2em;
+}
+
+.contentMain {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0em;
+}
+
+p {
+    width: 710px;
+    padding-right: 3%
+}
+
+@media only screen and (max-width: 980x) {
+    header {
+        height: 6em;
+    }
+}
