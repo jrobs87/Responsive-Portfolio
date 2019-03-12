@@ -1,5 +1,5 @@
 body {
-    background-image: url(/img/hexBackground.jpg);
+    background-image: url(../img/hexBackground.jpg);
     background-repeat: repeat;
     margin: 0;
     font-size: 1em;
@@ -156,7 +156,7 @@ input {
     height: 160px;
     margin: auto;
     float: left;
-    background-image: url(/img/myPhoto.jpg);
+    background-image: url(../img/myPhoto.jpg);
     background-repeat: no-repeat;
     background-size: 200px;
     margin: 2em;
@@ -218,7 +218,7 @@ input {
     }
     .navbar {
         background: white;
-        width: 100%;
+        margin: auto;
     }
     p {
         width: 620px;
@@ -232,7 +232,7 @@ input {
         width: 90%;
         margin: 2em;
         float: left;
-        background-image: url(/img/myPhoto.jpg);
+        background-image: url(../img/myPhoto.jpg);
         background-size: cover;
         height: 420px;
         margin-bottom: 2em;
@@ -240,7 +240,6 @@ input {
     .navList {
         background: white;
         margin: auto;
-        width: 100%;
     }
 }
 
@@ -253,8 +252,8 @@ input {
     }
     #navbar {
         width: 768px;
-        float: left;
     }
+    
     .navList {
         background: white;
         margin: auto;
